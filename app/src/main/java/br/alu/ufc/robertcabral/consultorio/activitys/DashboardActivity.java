@@ -33,8 +33,6 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
 
     FirebaseUser user;
     CardView btViewQueue, btSettings, btSchedule, btChegueAteNos;
-    //public int lastPosition = 0;
-    //boolean isSchedule = false;
     App app;
     DatabaseReference mDatabase;
     DatabaseReference databaseRef;

@@ -52,6 +52,10 @@ import br.alu.ufc.robertcabral.consultorio.entity.App;
 
 public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback, TaskLoadedCallback, View.OnClickListener {
 
+    public static final String CONSULTORIO = "Consultorio";
+    public static final String LOCALIZAÇÃO_ATUAL = "Localização atual";
+    public static final String ICON_LOCATION_USER = "icon_location_user";
+    public static final String ICON_LOCATION = "icon_location";
     private GoogleMap mMap;
     private MarkerOptions place1, place2;
     Button getDirection;
@@ -113,8 +117,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                         latittude = location.getLatitude();
                         longitude = location.getLongitude();
 
-                        place1 = new MarkerOptions().position(new LatLng(latittude, longitude)).title("Localização atual").icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons("icon_location_user", 80, 104)));
-                        place2 = new MarkerOptions().position(new LatLng(-4.965378, -39.006108)).title("Consultorio").icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons("icon_location", 80, 104)));
+                        place1 = new MarkerOptions().position(new LatLng(latittude, longitude)).title(LOCALIZAÇÃO_ATUAL).icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons(ICON_LOCATION_USER, 80, 104)));
+                        place2 = new MarkerOptions().position(new LatLng(-4.965378, -39.006108)).title(CONSULTORIO).icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons(ICON_LOCATION, 80, 104)));
                         MapFragment mapFragment = (MapFragment) getFragmentManager()
                                 .findFragmentById(R.id.mapNearBy);
                         mapFragment.getMapAsync(MapsActivity.this);
@@ -154,8 +158,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             if(mMap != null) {
                 mMap.clear();
 
-                place1 = new MarkerOptions().position(new LatLng(location.getLatitude(), location.getLongitude())).title("Localização atual").icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons("icon_location_user", 80, 104)));
-                place2 = new MarkerOptions().position(new LatLng(-4.965378, -39.006108)).title("Consultorio").icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons("icon_location", 80, 104)));
+                place1 = new MarkerOptions().position(new LatLng(location.getLatitude(), location.getLongitude())).title(LOCALIZAÇÃO_ATUAL).icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons(ICON_LOCATION_USER, 80, 104)));
+                place2 = new MarkerOptions().position(new LatLng(-4.965378, -39.006108)).title(CONSULTORIO).icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons(ICON_LOCATION, 80, 104)));
 
                 latittude = location.getLatitude();
                 longitude = location.getLongitude();
@@ -270,8 +274,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             if(mMap != null) {
                 mMap.clear();
 
-                place1 = new MarkerOptions().position(new LatLng(latittude, longitude)).title("Localização atual").icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons("icon_location_user", 80, 104)));
-                place2 = new MarkerOptions().position(new LatLng(-4.965378, -39.006108)).title("Consultorio").icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons("icon_location", 80, 104)));
+                place1 = new MarkerOptions().position(new LatLng(latittude, longitude)).title(LOCALIZAÇÃO_ATUAL).icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons(ICON_LOCATION_USER, 80, 104)));
+                place2 = new MarkerOptions().position(new LatLng(-4.965378, -39.006108)).title(CONSULTORIO).icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons(ICON_LOCATION, 80, 104)));
 
 
                 mMap.addMarker(place1);

@@ -1,14 +1,11 @@
 package br.alu.ufc.robertcabral.consultorio.activitys;
 
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.bottomappbar.BottomAppBar;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.text.InputType;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -17,9 +14,6 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Toast;
-
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -38,6 +32,8 @@ import static br.alu.ufc.robertcabral.consultorio.entity.App.lastPosition;
 
 public class AddAdminActivity extends AppCompatActivity implements View.OnClickListener {
 
+    public static final String QUEUE = "Queue";
+    public static final String LAST_POSITION = "lastPosition";
     ArrayList<User> users = new ArrayList<>();
     int selected;
     ListView listAdmin;
@@ -69,7 +65,7 @@ public class AddAdminActivity extends AppCompatActivity implements View.OnClickL
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
 
-        Query list = mDatabase.child("Queue");
+        Query list = mDatabase.child(QUEUE);
         list.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -129,7 +125,7 @@ public class AddAdminActivity extends AppCompatActivity implements View.OnClickL
 
         listAdmin.setSelector( android.R.color.holo_blue_light );
 
-        Query queryLast = mDatabase.child("lastPosition");
+        Query queryLast = mDatabase.child(LAST_POSITION);
 
         queryLast.addValueEventListener(new ValueEventListener() {
             @Override
@@ -183,16 +179,16 @@ public class AddAdminActivity extends AppCompatActivity implements View.OnClickL
                 if( users.size() > 0 && selected != -1 ) {
                     User user = users.get(selected);
 
-                    databaseRef = mDatabase.child("lastPosition");
+                    databaseRef = mDatabase.child(LAST_POSITION);
 
                     databaseRef.addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(DataSnapshot dataSnapshot) {
                             Fila fila = new Fila(user.getUid(), user.getName(), dataSnapshot.getValue(Integer.class) + 1);
 
-                            FirebaseDatabase.getInstance().getReference("Queue")
+                            FirebaseDatabase.getInstance().getReference(QUEUE)
                                     .child(user.getUid())
-                                    .setValue(fila).addOnCompleteListener(task -> FirebaseDatabase.getInstance().getReference("lastPosition")
+                                    .setValue(fila).addOnCompleteListener(task -> FirebaseDatabase.getInstance().getReference(LAST_POSITION)
                                             .setValue(fila.getPosition()));
                         }
 
@@ -228,9 +224,9 @@ public class AddAdminActivity extends AppCompatActivity implements View.OnClickL
 
                             Fila fila = new Fila(uid, input_text, lastPosition + 1);
 
-                            FirebaseDatabase.getInstance().getReference("Queue")
+                            FirebaseDatabase.getInstance().getReference(QUEUE)
                                     .child(uid)
-                                    .setValue(fila).addOnCompleteListener(task -> FirebaseDatabase.getInstance().getReference("lastPosition")
+                                    .setValue(fila).addOnCompleteListener(task -> FirebaseDatabase.getInstance().getReference(LAST_POSITION)
                                     .setValue(fila.getPosition()));
 
                         });

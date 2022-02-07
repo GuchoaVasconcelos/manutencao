@@ -9,10 +9,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -28,12 +26,13 @@ import java.util.Collections;
 
 import br.alu.ufc.robertcabral.consultorio.R;
 import br.alu.ufc.robertcabral.consultorio.entity.Fila;
-import br.alu.ufc.robertcabral.consultorio.entity.Progress;
 
 import static br.alu.ufc.robertcabral.consultorio.entity.App.lastPosition;
 
 public class AdminActivity extends AppCompatActivity implements View.OnClickListener {
 
+    public static final String QUEUE = "Queue";
+    public static final String LAST_POSITION = "lastPosition";
     ArrayList<Fila> values = new ArrayList<>();
     int selected;
     ListView listAdmin;
@@ -69,7 +68,7 @@ public class AdminActivity extends AppCompatActivity implements View.OnClickList
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
-        Query query = mDatabase.child("Queue");
+        Query query = mDatabase.child(QUEUE);
 
         query.addValueEventListener(listener);
 
@@ -98,7 +97,7 @@ public class AdminActivity extends AppCompatActivity implements View.OnClickList
         listAdmin.setSelector( android.R.color.holo_blue_light );
 
 
-        Query queryLast = mDatabase.child("lastPosition");
+        Query queryLast = mDatabase.child(LAST_POSITION);
 
         queryLast.addValueEventListener(new ValueEventListener() {
             @Override
@@ -171,7 +170,7 @@ public class AdminActivity extends AppCompatActivity implements View.OnClickList
                     Fila filaSelected = values.get( selected );
                     //mDatabase.child(fila1.getUid()).removeValue();
 
-                    databaseRef = mDatabase.child("Queue");
+                    databaseRef = mDatabase.child(QUEUE);
 
                     Query query = databaseRef;
 
@@ -183,14 +182,14 @@ public class AdminActivity extends AppCompatActivity implements View.OnClickList
                                     fila = data.getValue(Fila.class);
                                     data.getRef().removeValue();
 
-                                    databaseRef = mDatabase.child("lastPosition");
+                                    databaseRef = mDatabase.child(LAST_POSITION);
 
                                     databaseRef.addListenerForSingleValueEvent(new ValueEventListener() {
                                         @Override
                                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                                             lastPosition = dataSnapshot.getValue(Integer.class);
                                             if (fila.getPosition() < lastPosition) {
-                                                databaseRef = mDatabase.child("Queue");
+                                                databaseRef = mDatabase.child(QUEUE);
                                                 Query q = databaseRef;
 
                                                 q.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -213,14 +212,14 @@ public class AdminActivity extends AppCompatActivity implements View.OnClickList
 
                                                         for (int i = 0; i < posicoesParaAtualizar.size(); i++) {
                                                             if (!(posicoesParaAtualizar.get(i).getPosition() < fila.getPosition())) {
-                                                                FirebaseDatabase.getInstance().getReference("Queue")
+                                                                FirebaseDatabase.getInstance().getReference(QUEUE)
                                                                         .child(posicoesParaAtualizar.get(i).getUid())
                                                                         .setValue(posicoesParaAtualizar.get(i));
                                                             }
                                                         }
 
                                                         lastPosition--;
-                                                        FirebaseDatabase.getInstance().getReference("lastPosition")
+                                                        FirebaseDatabase.getInstance().getReference(LAST_POSITION)
                                                                 .setValue(dataSnapshot.getValue(Integer.class) - 1);
 
                                                     }
@@ -234,7 +233,7 @@ public class AdminActivity extends AppCompatActivity implements View.OnClickList
 
                                             } else if (fila.getPosition() == lastPosition) {
 
-                                                databaseRef = mDatabase.child("lastPosition");
+                                                databaseRef = mDatabase.child(LAST_POSITION);
 
                                                 Query query1 = databaseRef;
 
@@ -242,7 +241,7 @@ public class AdminActivity extends AppCompatActivity implements View.OnClickList
                                                     @Override
                                                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                                                         lastPosition--;
-                                                        FirebaseDatabase.getInstance().getReference("lastPosition")
+                                                        FirebaseDatabase.getInstance().getReference(LAST_POSITION)
                                                                 .setValue(dataSnapshot.getValue(Integer.class) - 1);
                                                     }
 

@@ -34,6 +34,8 @@ import static br.alu.ufc.robertcabral.consultorio.entity.App.isSchedule;
 
 public class QueueActivity extends AppCompatActivity implements View.OnClickListener {
 
+    public static final String QUEUE = "Queue";
+    public static final String LAST_POSITION = "lastPosition";
     ListView listQueue;
     BottomAppBar bottomAppBar;
     FloatingActionButton floatingActionButton;
@@ -56,11 +58,11 @@ public class QueueActivity extends AppCompatActivity implements View.OnClickList
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
-        Query query = mDatabase.child("Queue");
+        Query query = mDatabase.child(QUEUE);
 
         query.addValueEventListener(listener);
 
-        Query queryLast = mDatabase.child("lastPosition");
+        Query queryLast = mDatabase.child(LAST_POSITION);
 
         queryLast.addValueEventListener(new ValueEventListener() {
             @Override
@@ -147,7 +149,7 @@ public class QueueActivity extends AppCompatActivity implements View.OnClickList
             case R.id.red:
                 if(isSchedule) {
 
-                    Query q = mDatabase.child("Queue");
+                    Query q = mDatabase.child(QUEUE);
 
                     q.addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
@@ -156,14 +158,14 @@ public class QueueActivity extends AppCompatActivity implements View.OnClickList
                                 if (ds.getKey().equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
                                     fila = ds.getValue(Fila.class);
 
-                                    Query q1 = mDatabase.child("lastPosition");
+                                    Query q1 = mDatabase.child(LAST_POSITION);
 
                                     q1.addListenerForSingleValueEvent(new ValueEventListener() {
                                         @Override
                                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                                             if (!(fila.getPosition() == dataSnapshot.getValue(Integer.class))) {
                                                 // is not a last
-                                                Query q2 = mDatabase.child("Queue");
+                                                Query q2 = mDatabase.child(QUEUE);
 
                                                 q2.addListenerForSingleValueEvent(new ValueEventListener() {
                                                     @Override
@@ -186,7 +188,7 @@ public class QueueActivity extends AppCompatActivity implements View.OnClickList
                                                         }
 
                                                         for (int i = 0; i < vetAux.size(); i++) {
-                                                            FirebaseDatabase.getInstance().getReference("Queue")
+                                                            FirebaseDatabase.getInstance().getReference(QUEUE)
                                                                     .child(vetAux.get(i).getUid())
                                                                     .setValue(vetAux.get(i));
 
@@ -229,7 +231,7 @@ public class QueueActivity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.cancelSchedule:
                 if(isSchedule) {
-                    databaseRef = mDatabase.child("Queue");
+                    databaseRef = mDatabase.child(QUEUE);
 
                     Query query = databaseRef;
 
@@ -241,13 +243,13 @@ public class QueueActivity extends AppCompatActivity implements View.OnClickList
                                     fila = data.getValue(Fila.class);
                                     data.getRef().removeValue();
 
-                                    databaseRef = mDatabase.child("lastPosition");
+                                    databaseRef = mDatabase.child(LAST_POSITION);
 
                                     databaseRef.addListenerForSingleValueEvent(new ValueEventListener() {
                                         @Override
                                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                                             if (fila.getPosition() < dataSnapshot.getValue(Integer.class)) {
-                                                databaseRef = mDatabase.child("Queue");
+                                                databaseRef = mDatabase.child(QUEUE);
                                                 Query q = databaseRef;
 
                                                 q.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -270,14 +272,14 @@ public class QueueActivity extends AppCompatActivity implements View.OnClickList
 
                                                         for (int i = 0; i < posicoesParaAtualizar.size(); i++) {
                                                             if (!(posicoesParaAtualizar.get(i).getPosition() < fila.getPosition())) {
-                                                                FirebaseDatabase.getInstance().getReference("Queue")
+                                                                FirebaseDatabase.getInstance().getReference(QUEUE)
                                                                         .child(posicoesParaAtualizar.get(i).getUid())
                                                                         .setValue(posicoesParaAtualizar.get(i));
                                                             }
                                                         }
 
                                                         lastPosition--;
-                                                        FirebaseDatabase.getInstance().getReference("lastPosition")
+                                                        FirebaseDatabase.getInstance().getReference(LAST_POSITION)
                                                                 .setValue(dataSnapshot.getValue(Integer.class) - 1);
 
                                                     }
@@ -291,7 +293,7 @@ public class QueueActivity extends AppCompatActivity implements View.OnClickList
 
                                             } else if (fila.getPosition() == lastPosition) {
 
-                                                databaseRef = mDatabase.child("lastPosition");
+                                                databaseRef = mDatabase.child(LAST_POSITION);
 
                                                 Query query1 = databaseRef;
 
@@ -299,7 +301,7 @@ public class QueueActivity extends AppCompatActivity implements View.OnClickList
                                                     @Override
                                                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                                                         lastPosition--;
-                                                        FirebaseDatabase.getInstance().getReference("lastPosition")
+                                                        FirebaseDatabase.getInstance().getReference(LAST_POSITION)
                                                                 .setValue(dataSnapshot.getValue(Integer.class) - 1);
                                                     }
 
@@ -341,7 +343,7 @@ public class QueueActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.btRefreshQueue) {
-            Query query = mDatabase.child("Queue");
+            Query query = mDatabase.child(QUEUE);
 
             query.addValueEventListener(listener);
         }

@@ -66,6 +66,10 @@ import br.alu.ufc.robertcabral.consultorio.entity.User;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     final private static int GOOGLE_SIGN = 0;
+    public static final String AGUARDE = "Aguarde";
+    public static final String FAZENDO_O_LOGIN = "Fazendo o login";
+    public static final String LOGIN = "Login";
+    public static final String USERS = "Users";
     EditText etEmailLogin, etPasswordLogin;
     TextView btCadastreLogin;
     Button btLogin, btForgotPasswordLogin;
@@ -139,7 +143,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                                 user = mAuth.getCurrentUser();
 
-                                Query query = mDatabase.child("Users").child(user.getUid());
+                                Query query = mDatabase.child(USERS).child(user.getUid());
 
                                 ValueEventListener valueEventListener = new ValueEventListener() {
                                     @Override
@@ -154,7 +158,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                                     ""
                                             );
 
-                                            FirebaseDatabase.getInstance().getReference("Users")
+                                            FirebaseDatabase.getInstance().getReference(USERS)
                                                     .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                                                     .setValue(newUser);
                                         }
@@ -218,7 +222,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     void signInFacebook(){
-        progress.start("Aguarde", "Fazendo o login");
+        fazendoLogin();
         btFacebookLogin.setReadPermissions(Arrays.asList(
                 "public_profile", "email", "user_birthday"));
 
@@ -266,6 +270,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
     }
 
+    private void fazendoLogin() {
+        progress.start(AGUARDE, FAZENDO_O_LOGIN);
+    }
+
     private void handleFacebookToken(AccessToken accessToken, String email, String birthDay) {
         AuthCredential credential = FacebookAuthProvider.getCredential(accessToken.getToken());
         mAuth.signInWithCredential(credential)
@@ -273,7 +281,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     if(task.isSuccessful()) {
                         user = mAuth.getCurrentUser();
 
-                        Query query = mDatabase.child("Users").child(user.getUid());
+                        Query query = mDatabase.child(USERS).child(user.getUid());
 
                         ValueEventListener valueEventListener = new ValueEventListener() {
                             @Override
@@ -288,7 +296,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                             birthDay
                                     );
 
-                                    FirebaseDatabase.getInstance().getReference("Users")
+                                    FirebaseDatabase.getInstance().getReference(USERS)
                                             .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                                             .setValue(newUser);
                                 }
@@ -330,7 +338,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     GoogleSignInAccount account = task.getResult(ApiException.class);
                     if(account != null) firebaseAuthWithGoogle(account);
                 }catch (ApiException e){
-                    Log.e("Login", e.getMessage());
+                    Log.e(LOGIN, e.getMessage());
                 }
 
                 break;
@@ -338,7 +346,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void firebaseAuthWithGoogle(GoogleSignInAccount account) {
-        Log.d("Login", "Login Google: " + account.getId());
+        Log.d(LOGIN, "Login Google: " + account.getId());
 
         AuthCredential credential = GoogleAuthProvider
                 .getCredential(account.getIdToken(), null);
@@ -346,11 +354,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .addOnCompleteListener(task -> {
 
                         if(task.isSuccessful()) {
-                            Log.d("Login", "Login Google success");
+                            Log.d(LOGIN, "Login Google success");
                             user = mAuth.getCurrentUser();
 
 
-                            Query query = mDatabase.child("Users").child(user.getUid());
+                            Query query = mDatabase.child(USERS).child(user.getUid());
 
                             ValueEventListener valueEventListener = new ValueEventListener() {
                                 @Override
@@ -365,7 +373,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                                 ""
                                         );
 
-                                        FirebaseDatabase.getInstance().getReference("Users")
+                                        FirebaseDatabase.getInstance().getReference(USERS)
                                                 .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                                                 .setValue(newUser);
                                     }
@@ -385,7 +393,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             finish();
 
                         }else{
-                            Log.e("Login", "Login Google unsuccess", task.getException());
+                            Log.e(LOGIN, "Login Google unsuccess", task.getException());
                         }
 
                 });
@@ -442,7 +450,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             return;
         }
 
-        progress.start("Aguarde", "Fazendo o login");
+        fazendoLogin();
 
 
         mAuth.signInWithEmailAndPassword(email, password)
@@ -508,7 +516,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.btGoogleLogin:
-                progress.start("Aguarde", "Fazendo o login");
+                fazendoLogin();
                 signInGoogle();
                 break;
 
@@ -517,7 +525,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.btTwitterLogin:
-                progress.start("Aguarde", "Fazendo o login");
+                fazendoLogin();
                 break;
         }
     }
