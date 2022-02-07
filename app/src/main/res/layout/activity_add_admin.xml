@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.AddAdminActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/linearLayoutAddAdmin"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circle"
+                android:src="@drawable/logo_clinica"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:tint="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adicionar a fila"
+                android:textSize="20sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-black"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/trianguloAddAdmin"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/square"
+            android:layout_marginTop="-10dp"
+            android:rotation="45"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/linearLayoutAddAdmin"
+            />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutAddAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/trianguloAddAdmin">
+
+            <ListView
+                android:id="@+id/listAddAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="?actionBarSize"/>
+
+
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.design.bottomappbar.BottomAppBar
+                    android:id="@+id/bottomAppBarAddAdmin"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layout_gravity="bottom"
+                    app:backgroundTint="@color/colorPrimary"
+                    app:buttonGravity="bottom|top"
+                    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:fabAlignmentMode="end"
+                    app:hideOnScroll="true"
+                    app:layout_scrollFlags="scroll|enterAlways" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/btRefreshAddAdmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_refresh_black_24dp"
+                    android:tint="@color/colorPrimaryDark"
+                    app:backgroundTint="@color/white"
+                    app:fabSize="normal"
+                    app:layout_anchor="@id/bottomAppBarAddAdmin" />
+
+            </android.support.design.widget.CoordinatorLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

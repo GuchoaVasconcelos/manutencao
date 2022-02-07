@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "96708064229",
+    "firebase_url": "https://consultorio-812e6.firebaseio.com",
+    "project_id": "consultorio-812e6",
+    "storage_bucket": "consultorio-812e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96708064229:android:38374e4e8536d5af",
+        "android_client_info": {
+          "package_name": "br.alu.ufc.robertcabral.consultorio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96708064229-9s82brgidpq5l8ql7r0g50inulhrngle.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.alu.ufc.robertcabral.consultorio",
+            "certificate_hash": "1e01b9d539266ccf94c86e1bf5315cded0242368"
+          }
+        },
+        {
+          "client_id": "96708064229-sj26jcgcdkh4mfu0q5sdbr9nr128l7im.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDViD5p_65EQ-fPMfza3GEv8F45CO7o45Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "96708064229-sj26jcgcdkh4mfu0q5sdbr9nr128l7im.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

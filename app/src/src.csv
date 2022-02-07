@@ -1,0 +1,301 @@
+Kind,Name,File,PercentLackOfCohesion,CountClassCoupled,AvgCyclomatic,SumCyclomatic,MaxNesting,Essential,CountClassDerived,MaxInheritanceTree,CountClassBase,CountLineCode,CountLineComment,CountDeclClass,CountDeclInstanceMethod
+File,"androidTest\java\br\alu\ufc\robertcabral\consultorio\ExampleInstrumentedTest.java",androidTest\java\br\alu\ufc\robertcabral\consultorio\ExampleInstrumentedTest.java,,,1,1,0,,,,,15,6,1,1
+Package,"br",,,,0,0,0,,,,,0,0,0,0
+Package,"br.alu",,,,0,0,0,,,,,0,0,0,0
+Package,"br.alu.ufc",,,,0,0,0,,,,,0,0,0,0
+Package,"br.alu.ufc.robertcabral",,,,0,0,0,,,,,0,0,0,0
+Package,"br.alu.ufc.robertcabral.consultorio",androidTest\java\br\alu\ufc\robertcabral\consultorio\ExampleInstrumentedTest.java,,,1,2,0,,,,,24,11,2,2
+Public Class,"br.alu.ufc.robertcabral.consultorio.ExampleInstrumentedTest",androidTest\java\br\alu\ufc\robertcabral\consultorio\ExampleInstrumentedTest.java,0,3,1,1,0,,0,1,1,7,6,,1
+Public Method,"br.alu.ufc.robertcabral.consultorio.ExampleInstrumentedTest.useAppContext",androidTest\java\br\alu\ufc\robertcabral\consultorio\ExampleInstrumentedTest.java,,,,1,0,1,,,,4,1,,
+Public Class,"br.alu.ufc.robertcabral.consultorio.ExampleUnitTest",test\java\br\alu\ufc\robertcabral\consultorio\ExampleUnitTest.java,0,1,1,1,0,,0,1,1,5,5,,1
+Public Method,"br.alu.ufc.robertcabral.consultorio.ExampleUnitTest.addition_isCorrect",test\java\br\alu\ufc\robertcabral\consultorio\ExampleUnitTest.java,,,,1,0,1,,,,3,0,,
+Package,"br.alu.ufc.robertcabral.consultorio.activitys",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AddAdminActivity.java,,,1,299,3,,,,,1924,62,52,137
+Public Class,"br.alu.ufc.robertcabral.consultorio.activitys.AddAdminActivity",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AddAdminActivity.java,75,23,1,9,0,,0,2,2,152,0,,4
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.AddAdminActivity.(Anon_4)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AddAdminActivity.java,0,10,2,4,1,,0,2,1,17,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AddAdminActivity.(Anon_4).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AddAdminActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AddAdminActivity.(Anon_4).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AddAdminActivity.java,,,,3,1,1,,,,12,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AddAdminActivity.onClick",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AddAdminActivity.java,,,,1,0,1,,,,2,0,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.AddAdminActivity.onCreate",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AddAdminActivity.java,,,,2,0,1,,,,66,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.AddAdminActivity.onCreate.(Anon_1)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AddAdminActivity.java,0,9,1,3,0,,0,2,1,37,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AddAdminActivity.onCreate.(Anon_1).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AddAdminActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AddAdminActivity.onCreate.(Anon_1).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AddAdminActivity.java,,,,2,0,1,,,,32,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.AddAdminActivity.onCreate.(Anon_1).onDataChange.(Anon_2)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AddAdminActivity.java,0,11,3,6,2,,0,2,1,24,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AddAdminActivity.onCreate.(Anon_1).onDataChange.(Anon_2).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AddAdminActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AddAdminActivity.onCreate.(Anon_1).onDataChange.(Anon_2).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AddAdminActivity.java,,,,5,2,1,,,,19,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.AddAdminActivity.onCreate.(Anon_3)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AddAdminActivity.java,0,7,1,2,0,,0,2,1,8,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AddAdminActivity.onCreate.(Anon_3).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AddAdminActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AddAdminActivity.onCreate.(Anon_3).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AddAdminActivity.java,,,,1,0,1,,,,3,0,,
+Lambda Method,"br.alu.ufc.robertcabral.consultorio.activitys.AddAdminActivity.onCreate.(lambda_expr_1)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AddAdminActivity.java,,,,1,0,1,,,,3,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AddAdminActivity.onCreateOptionsMenu",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AddAdminActivity.java,,,,1,0,1,,,,4,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AddAdminActivity.onOptionsItemSelected",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AddAdminActivity.java,,,,5,0,1,,,,47,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.AddAdminActivity.onOptionsItemSelected.(Anon_5)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AddAdminActivity.java,0,9,1,3,0,,0,2,1,12,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AddAdminActivity.onOptionsItemSelected.(Anon_5).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AddAdminActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AddAdminActivity.onOptionsItemSelected.(Anon_5).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AddAdminActivity.java,,,,2,0,1,,,,7,0,,
+Lambda Method,"br.alu.ufc.robertcabral.consultorio.activitys.AddAdminActivity.onOptionsItemSelected.(Anon_5).onDataChange.(lambda_expr_1)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AddAdminActivity.java,,,,1,0,1,,,,2,0,,
+Lambda Method,"br.alu.ufc.robertcabral.consultorio.activitys.AddAdminActivity.onOptionsItemSelected.(lambda_expr_1)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AddAdminActivity.java,,,,2,0,1,,,,10,0,,
+Lambda Method,"br.alu.ufc.robertcabral.consultorio.activitys.AddAdminActivity.onOptionsItemSelected.(lambda_expr_1).(lambda_expr_2)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AddAdminActivity.java,,,,1,0,1,,,,2,0,,
+Public Class,"br.alu.ufc.robertcabral.consultorio.activitys.AdminActivity",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java,72,21,2,9,1,,0,2,2,168,21,,4
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.AdminActivity.(Anon_2)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java,0,12,2,6,1,,0,2,1,23,1,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AdminActivity.(Anon_2).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AdminActivity.(Anon_2).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java,,,,5,1,1,,,,18,1,,
+Lambda Method,"br.alu.ufc.robertcabral.consultorio.activitys.AdminActivity.(Anon_2).onDataChange.(lambda_expr_1)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java,,,,1,0,1,,,,1,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AdminActivity.onClick",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java,,,,2,1,1,,,,7,0,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.AdminActivity.onCreate",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java,,,,2,0,1,,,,29,18,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.AdminActivity.onCreate.(Anon_1)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java,0,7,1,2,0,,0,2,1,8,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AdminActivity.onCreate.(Anon_1).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AdminActivity.onCreate.(Anon_1).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java,,,,1,0,1,,,,3,0,,
+Lambda Method,"br.alu.ufc.robertcabral.consultorio.activitys.AdminActivity.onCreate.(lambda_expr_1)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java,,,,1,0,1,,,,3,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AdminActivity.onCreateOptionsMenu",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java,,,,1,0,1,,,,4,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AdminActivity.onOptionsItemSelected",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java,,,,4,1,1,,,,88,1,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.AdminActivity.onOptionsItemSelected.(Anon_3)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java,0,7,2,4,0,,0,2,1,70,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AdminActivity.onOptionsItemSelected.(Anon_3).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AdminActivity.onOptionsItemSelected.(Anon_3).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java,,,,3,0,1,,,,65,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.AdminActivity.onOptionsItemSelected.(Anon_3).onDataChange.(Anon_4)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java,0,10,2,4,0,,0,2,1,55,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AdminActivity.onOptionsItemSelected.(Anon_3).onDataChange.(Anon_4).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AdminActivity.onOptionsItemSelected.(Anon_3).onDataChange.(Anon_4).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java,,,,3,0,1,,,,50,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.AdminActivity.onOptionsItemSelected.(Anon_3).onDataChange.(Anon_4).onDataChange.(Anon_5)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java,0,13,3,8,2,,0,2,1,28,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AdminActivity.onOptionsItemSelected.(Anon_3).onDataChange.(Anon_4).onDataChange.(Anon_5).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AdminActivity.onOptionsItemSelected.(Anon_3).onDataChange.(Anon_4).onDataChange.(Anon_5).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java,,,,7,2,1,,,,23,0,,
+Lambda Method,"br.alu.ufc.robertcabral.consultorio.activitys.AdminActivity.onOptionsItemSelected.(Anon_3).onDataChange.(Anon_4).onDataChange.(Anon_5).onDataChange.(lambda_expr_1)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java,,,,1,0,1,,,,1,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.AdminActivity.onOptionsItemSelected.(Anon_3).onDataChange.(Anon_4).onDataChange.(Anon_6)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java,0,8,1,2,0,,0,2,1,10,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AdminActivity.onOptionsItemSelected.(Anon_3).onDataChange.(Anon_4).onDataChange.(Anon_6).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.AdminActivity.onOptionsItemSelected.(Anon_3).onDataChange.(Anon_4).onDataChange.(Anon_6).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java,,,,1,0,1,,,,5,0,,
+Public Class,"br.alu.ufc.robertcabral.consultorio.activitys.DashboardActivity",main\java\br\alu\ufc\robertcabral\consultorio\activitys\DashboardActivity.java,78,23,2,11,1,,0,2,2,162,9,,5
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.DashboardActivity.(Anon_3)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\DashboardActivity.java,0,7,3,6,3,,0,2,1,21,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.DashboardActivity.(Anon_3).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\DashboardActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.DashboardActivity.(Anon_3).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\DashboardActivity.java,,,,5,3,1,,,,16,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.DashboardActivity.(Anon_4)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\DashboardActivity.java,0,7,3,7,3,,0,2,1,25,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.DashboardActivity.(Anon_4).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\DashboardActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.DashboardActivity.(Anon_4).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\DashboardActivity.java,,,,6,3,1,,,,20,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.DashboardActivity.onClick",main\java\br\alu\ufc\robertcabral\consultorio\activitys\DashboardActivity.java,,,,6,1,1,,,,44,5,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.DashboardActivity.onClick.(Anon_5)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\DashboardActivity.java,0,8,1,2,0,,0,2,1,19,1,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.DashboardActivity.onClick.(Anon_5).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\DashboardActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.DashboardActivity.onClick.(Anon_5).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\DashboardActivity.java,,,,1,0,1,,,,14,1,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.DashboardActivity.onClick.(Anon_5).onDataChange.(Anon_6)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\DashboardActivity.java,0,7,2,2,1,,0,2,1,8,0,,1
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.DashboardActivity.onClick.(Anon_5).onDataChange.(Anon_6).onComplete",main\java\br\alu\ufc\robertcabral\consultorio\activitys\DashboardActivity.java,,,,2,1,1,,,,6,0,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.DashboardActivity.onCreate",main\java\br\alu\ufc\robertcabral\consultorio\activitys\DashboardActivity.java,,,,1,0,1,,,,37,2,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.DashboardActivity.onCreate.(Anon_1)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\DashboardActivity.java,0,6,1,2,0,,0,2,1,8,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.DashboardActivity.onCreate.(Anon_1).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\DashboardActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.DashboardActivity.onCreate.(Anon_1).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\DashboardActivity.java,,,,1,0,1,,,,3,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.DashboardActivity.onCreate.(Anon_2)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\DashboardActivity.java,0,7,1,2,0,,0,2,1,8,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.DashboardActivity.onCreate.(Anon_2).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\DashboardActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.DashboardActivity.onCreate.(Anon_2).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\DashboardActivity.java,,,,1,0,1,,,,3,0,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.DashboardActivity.onPause",main\java\br\alu\ufc\robertcabral\consultorio\activitys\DashboardActivity.java,,,,1,0,1,,,,4,0,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.DashboardActivity.onResume",main\java\br\alu\ufc\robertcabral\consultorio\activitys\DashboardActivity.java,,,,1,0,1,,,,4,0,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.DashboardActivity.onStart",main\java\br\alu\ufc\robertcabral\consultorio\activitys\DashboardActivity.java,,,,2,1,1,,,,11,0,,
+Public Class,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,78,43,2,32,3,,0,2,2,363,2,,10
+Private Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.firebaseAuthWithGoogle",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,3,1,1,,,,39,0,,
+Lambda Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.firebaseAuthWithGoogle.(lambda_expr_1)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,2,0,1,,,,33,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.firebaseAuthWithGoogle.(lambda_expr_1).(Anon_6)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,0,9,1,3,1,,0,2,1,19,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.firebaseAuthWithGoogle.(lambda_expr_1).(Anon_6).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.firebaseAuthWithGoogle.(lambda_expr_1).(Anon_6).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,2,1,1,,,,14,0,,
+Private Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.handleFacebookToken",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,3,0,1,,,,34,0,,
+Lambda Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.handleFacebookToken.(lambda_expr_1)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,2,0,1,,,,30,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.handleFacebookToken.(lambda_expr_1).(Anon_5)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,0,9,1,3,1,,0,2,1,19,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.handleFacebookToken.(lambda_expr_1).(Anon_5).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.handleFacebookToken.(lambda_expr_1).(Anon_5).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,2,1,1,,,,14,0,,
+Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.makeLogin",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,4,0,4,,,,42,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.makeLogin.(Anon_7)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,0,12,5,5,3,,0,2,1,19,0,,1
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.makeLogin.(Anon_7).onComplete",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,5,3,1,,,,17,0,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.onActivityResult",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,4,3,1,,,,17,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.onClick",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,9,0,9,,,,46,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.onClick.(Anon_8)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,0,5,2,2,1,,0,2,1,10,0,,1
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.onClick.(Anon_8).onComplete",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,2,1,1,,,,8,0,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.onCreate",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,1,0,1,,,,99,1,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.onCreate.(Anon_1)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,0,19,1,7,3,,0,2,1,65,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.onCreate.(Anon_1).failure",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,1,0,1,,,,4,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.onCreate.(Anon_1).success",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,6,3,1,,,,58,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.onCreate.(Anon_1).success.(Anon_2)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,0,4,1,2,0,,0,2,1,8,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.onCreate.(Anon_1).success.(Anon_2).failure",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.onCreate.(Anon_1).success.(Anon_2).success",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,1,0,1,,,,3,0,,
+Lambda Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.onCreate.(Anon_1).success.(lambda_expr_1)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,5,0,1,,,,42,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.onCreate.(Anon_1).success.(lambda_expr_1).(Anon_3)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,0,10,1,3,1,,0,2,1,19,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.onCreate.(Anon_1).success.(lambda_expr_1).(Anon_3).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.onCreate.(Anon_1).success.(lambda_expr_1).(Anon_3).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,2,1,1,,,,14,0,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.onDestroy",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,2,1,1,,,,5,0,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.onStart",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,4,2,1,,,,17,0,,
+Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.signInFacebook",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,1,0,1,,,,40,1,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.signInFacebook.(Anon_4)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,0,11,1,7,1,,0,2,1,34,1,,3
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.signInFacebook.(Anon_4).onCancel",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,2,1,1,,,,4,1,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.signInFacebook.(Anon_4).onError",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,2,1,1,,,,5,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.signInFacebook.(Anon_4).onSuccess",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,3,1,1,,,,21,0,,
+Lambda Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.signInFacebook.(Anon_4).onSuccess.(lambda_expr_1)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,2,0,1,,,,11,0,,
+Method,"br.alu.ufc.robertcabral.consultorio.activitys.MainActivity.signInGoogle",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,,1,0,1,,,,4,0,,
+Public Class,"br.alu.ufc.robertcabral.consultorio.activitys.MapsActivity",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MapsActivity.java,88,39,1,24,3,,0,2,4,170,24,,11
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.MapsActivity.(Anon_1)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MapsActivity.java,0,8,1,5,1,,0,2,1,22,11,,4
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.MapsActivity.(Anon_1).onLocationChanged",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MapsActivity.java,,,,2,1,1,,,,11,11,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.MapsActivity.(Anon_1).onProviderDisabled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MapsActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.MapsActivity.(Anon_1).onProviderEnabled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MapsActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.MapsActivity.(Anon_1).onStatusChanged",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MapsActivity.java,,,,1,0,1,,,,2,0,,
+Private Method,"br.alu.ufc.robertcabral.consultorio.activitys.MapsActivity.getUrl",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MapsActivity.java,,,,1,0,1,,,,9,7,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.MapsActivity.onClick",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MapsActivity.java,,,,3,2,1,,,,18,0,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.MapsActivity.onCreate",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MapsActivity.java,,,,8,3,1,,,,48,2,,
+Lambda Method,"br.alu.ufc.robertcabral.consultorio.activitys.MapsActivity.onCreate.(lambda_expr_1)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MapsActivity.java,,,,1,0,1,,,,3,0,,
+Lambda Method,"br.alu.ufc.robertcabral.consultorio.activitys.MapsActivity.onCreate.(lambda_expr_2)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MapsActivity.java,,,,1,0,1,,,,1,0,,
+Lambda Method,"br.alu.ufc.robertcabral.consultorio.activitys.MapsActivity.onCreate.(lambda_expr_3)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MapsActivity.java,,,,3,0,1,,,,14,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.MapsActivity.onCreateOptionsMenu",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MapsActivity.java,,,,1,0,1,,,,4,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.MapsActivity.onMapReady",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MapsActivity.java,,,,1,0,1,,,,13,3,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.MapsActivity.onOptionsItemSelected",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MapsActivity.java,,,,2,1,1,,,,8,0,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.MapsActivity.onPause",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MapsActivity.java,,,,1,0,1,,,,4,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.MapsActivity.onRequestPermissionsResult",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MapsActivity.java,,,,3,2,1,,,,7,1,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.MapsActivity.onResume",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MapsActivity.java,,,,1,0,1,,,,4,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.MapsActivity.onTaskDone",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MapsActivity.java,,,,2,1,1,,,,5,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.MapsActivity.resizeMapIcons",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MapsActivity.java,,,,1,0,1,,,,5,0,,
+Public Class,"br.alu.ufc.robertcabral.consultorio.activitys.ProfileActivity",main\java\br\alu\ufc\robertcabral\consultorio\activitys\ProfileActivity.java,66,31,2,14,1,,0,2,3,145,0,,6
+Private Static Class,"br.alu.ufc.robertcabral.consultorio.activitys.ProfileActivity.DatePickerFeagment",main\java\br\alu\ufc\robertcabral\consultorio\activitys\ProfileActivity.java,0,7,1,1,0,,0,2,1,11,0,,1
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.ProfileActivity.DatePickerFeagment.onCreateDialog",main\java\br\alu\ufc\robertcabral\consultorio\activitys\ProfileActivity.java,,,,1,0,1,,,,7,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.ProfileActivity.onClick",main\java\br\alu\ufc\robertcabral\consultorio\activitys\ProfileActivity.java,,,,7,0,1,,,,53,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.ProfileActivity.onClick.(Anon_2)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\ProfileActivity.java,0,8,2,4,2,,0,2,1,16,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.ProfileActivity.onClick.(Anon_2).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\ProfileActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.ProfileActivity.onClick.(Anon_2).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\ProfileActivity.java,,,,3,2,1,,,,11,0,,
+Lambda Method,"br.alu.ufc.robertcabral.consultorio.activitys.ProfileActivity.onClick.(lambda_expr_1)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\ProfileActivity.java,,,,2,0,1,,,,4,0,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.ProfileActivity.onCreate",main\java\br\alu\ufc\robertcabral\consultorio\activitys\ProfileActivity.java,,,,1,0,1,,,,35,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.ProfileActivity.onCreate.(Anon_1)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\ProfileActivity.java,0,9,2,4,1,,0,2,1,16,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.ProfileActivity.onCreate.(Anon_1).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\ProfileActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.ProfileActivity.onCreate.(Anon_1).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\ProfileActivity.java,,,,3,1,1,,,,11,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.ProfileActivity.onDateSet",main\java\br\alu\ufc\robertcabral\consultorio\activitys\ProfileActivity.java,,,,2,1,1,,,,14,0,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.ProfileActivity.onPause",main\java\br\alu\ufc\robertcabral\consultorio\activitys\ProfileActivity.java,,,,1,0,1,,,,4,0,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.ProfileActivity.onResume",main\java\br\alu\ufc\robertcabral\consultorio\activitys\ProfileActivity.java,,,,1,0,1,,,,4,0,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.ProfileActivity.onStart",main\java\br\alu\ufc\robertcabral\consultorio\activitys\ProfileActivity.java,,,,2,1,1,,,,7,0,,
+Public Class,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,81,18,1,12,1,,0,2,2,237,1,,7
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.(Anon_2)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,0,14,3,8,2,,0,2,1,28,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.(Anon_2).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.(Anon_2).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,7,2,1,,,,23,0,,
+Lambda Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.(Anon_2).onDataChange.(lambda_expr_1)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,1,0,1,,,,1,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onClick",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,2,1,1,,,,6,0,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onCreate",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,1,0,1,,,,23,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onCreate.(Anon_1)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,0,7,1,2,0,,0,2,1,8,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onCreate.(Anon_1).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onCreate.(Anon_1).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,1,0,1,,,,3,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onCreateOptionsMenu",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,1,0,1,,,,4,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onOptionsItemSelected",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,5,1,1,,,,147,1,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onOptionsItemSelected.(Anon_3)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,0,9,2,4,0,,0,2,1,53,1,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onOptionsItemSelected.(Anon_3).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onOptionsItemSelected.(Anon_3).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,3,0,1,,,,48,1,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onOptionsItemSelected.(Anon_3).onDataChange.(Anon_4)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,0,10,1,3,1,,0,2,1,39,1,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onOptionsItemSelected.(Anon_3).onDataChange.(Anon_4).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onOptionsItemSelected.(Anon_3).onDataChange.(Anon_4).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,2,1,1,,,,34,1,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onOptionsItemSelected.(Anon_3).onDataChange.(Anon_4).onDataChange.(Anon_5)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,0,12,3,7,2,,0,2,1,26,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onOptionsItemSelected.(Anon_3).onDataChange.(Anon_4).onDataChange.(Anon_5).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onOptionsItemSelected.(Anon_3).onDataChange.(Anon_4).onDataChange.(Anon_5).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,6,2,1,,,,21,0,,
+Lambda Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onOptionsItemSelected.(Anon_3).onDataChange.(Anon_4).onDataChange.(Anon_5).onDataChange.(lambda_expr_1)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,1,0,1,,,,1,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onOptionsItemSelected.(Anon_6)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,0,8,2,4,0,,0,2,1,70,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onOptionsItemSelected.(Anon_6).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onOptionsItemSelected.(Anon_6).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,3,0,1,,,,65,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onOptionsItemSelected.(Anon_6).onDataChange.(Anon_7)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,0,11,2,4,0,,0,2,1,55,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onOptionsItemSelected.(Anon_6).onDataChange.(Anon_7).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onOptionsItemSelected.(Anon_6).onDataChange.(Anon_7).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,3,0,1,,,,50,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onOptionsItemSelected.(Anon_6).onDataChange.(Anon_7).onDataChange.(Anon_8)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,0,13,3,8,2,,0,2,1,28,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onOptionsItemSelected.(Anon_6).onDataChange.(Anon_7).onDataChange.(Anon_8).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onOptionsItemSelected.(Anon_6).onDataChange.(Anon_7).onDataChange.(Anon_8).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,7,2,1,,,,23,0,,
+Lambda Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onOptionsItemSelected.(Anon_6).onDataChange.(Anon_7).onDataChange.(Anon_8).onDataChange.(lambda_expr_1)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,1,0,1,,,,1,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onOptionsItemSelected.(Anon_6).onDataChange.(Anon_7).onDataChange.(Anon_9)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,0,8,1,2,0,,0,2,1,10,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onOptionsItemSelected.(Anon_6).onDataChange.(Anon_7).onDataChange.(Anon_9).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onOptionsItemSelected.(Anon_6).onDataChange.(Anon_7).onDataChange.(Anon_9).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,1,0,1,,,,5,0,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onPause",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,1,0,1,,,,4,0,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onResume",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,1,0,1,,,,4,0,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.QueueActivity.onStart",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,,1,0,1,,,,5,0,,
+Public Class,"br.alu.ufc.robertcabral.consultorio.activitys.SettingsActivity",main\java\br\alu\ufc\robertcabral\consultorio\activitys\SettingsActivity.java,70,19,1,9,1,,0,2,2,59,2,,5
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.SettingsActivity.onCreate",main\java\br\alu\ufc\robertcabral\consultorio\activitys\SettingsActivity.java,,,,1,0,1,,,,10,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.SettingsActivity.onItemClick",main\java\br\alu\ufc\robertcabral\consultorio\activitys\SettingsActivity.java,,,,4,1,1,,,,24,2,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.SettingsActivity.onPause",main\java\br\alu\ufc\robertcabral\consultorio\activitys\SettingsActivity.java,,,,1,0,1,,,,4,0,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.SettingsActivity.onResume",main\java\br\alu\ufc\robertcabral\consultorio\activitys\SettingsActivity.java,,,,1,0,1,,,,4,0,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.SettingsActivity.onStart",main\java\br\alu\ufc\robertcabral\consultorio\activitys\SettingsActivity.java,,,,2,1,1,,,,7,0,,
+Public Class,"br.alu.ufc.robertcabral.consultorio.activitys.SignupActivity",main\java\br\alu\ufc\robertcabral\consultorio\activitys\SignupActivity.java,65,21,3,15,1,,0,2,2,169,3,,5
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.SignupActivity.(Anon_2)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\SignupActivity.java,0,3,1,1,0,,0,2,1,5,0,,1
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.SignupActivity.(Anon_2).onClick",main\java\br\alu\ufc\robertcabral\consultorio\activitys\SignupActivity.java,,,,1,0,1,,,,3,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.SignupActivity.(Anon_3)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\SignupActivity.java,0,6,1,1,0,,0,2,1,7,0,,1
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.SignupActivity.(Anon_3).onClick",main\java\br\alu\ufc\robertcabral\consultorio\activitys\SignupActivity.java,,,,1,0,1,,,,5,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.SignupActivity.(Anon_4)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\SignupActivity.java,0,4,1,1,0,,0,2,1,6,0,,1
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.SignupActivity.(Anon_4).onClick",main\java\br\alu\ufc\robertcabral\consultorio\activitys\SignupActivity.java,,,,1,0,1,,,,4,0,,
+Public Static Class,"br.alu.ufc.robertcabral.consultorio.activitys.SignupActivity.DatePickerFeagment",main\java\br\alu\ufc\robertcabral\consultorio\activitys\SignupActivity.java,0,7,1,1,0,,0,2,1,11,0,,1
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.SignupActivity.DatePickerFeagment.onCreateDialog",main\java\br\alu\ufc\robertcabral\consultorio\activitys\SignupActivity.java,,,,1,0,1,,,,7,0,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.SignupActivity.onCreate",main\java\br\alu\ufc\robertcabral\consultorio\activitys\SignupActivity.java,,,,1,0,1,,,,16,3,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.SignupActivity.onDateSet",main\java\br\alu\ufc\robertcabral\consultorio\activitys\SignupActivity.java,,,,2,1,1,,,,14,0,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.SignupActivity.onDestroy",main\java\br\alu\ufc\robertcabral\consultorio\activitys\SignupActivity.java,,,,2,1,1,,,,5,0,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.activitys.SignupActivity.onStart",main\java\br\alu\ufc\robertcabral\consultorio\activitys\SignupActivity.java,,,,3,1,1,,,,10,0,,
+Private Method,"br.alu.ufc.robertcabral.consultorio.activitys.SignupActivity.registerUser",main\java\br\alu\ufc\robertcabral\consultorio\activitys\SignupActivity.java,,,,7,0,7,,,,78,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.activitys.SignupActivity.registerUser.(Anon_1)",main\java\br\alu\ufc\robertcabral\consultorio\activitys\SignupActivity.java,0,20,6,6,3,,0,2,1,37,0,,1
+Public Method,"br.alu.ufc.robertcabral.consultorio.activitys.SignupActivity.registerUser.(Anon_1).onComplete",main\java\br\alu\ufc\robertcabral\consultorio\activitys\SignupActivity.java,,,,6,3,1,,,,34,0,,
+Package,"br.alu.ufc.robertcabral.consultorio.directionhelpers",main\java\br\alu\ufc\robertcabral\consultorio\directionhelpers\DataParser.java,,,3,28,5,,,,,203,35,4,10
+Public Class,"br.alu.ufc.robertcabral.consultorio.directionhelpers.DataParser",main\java\br\alu\ufc\robertcabral\consultorio\directionhelpers\DataParser.java,0,10,6,13,5,,0,1,1,61,11,,2
+Private Method,"br.alu.ufc.robertcabral.consultorio.directionhelpers.DataParser.decodePoly",main\java\br\alu\ufc\robertcabral\consultorio\directionhelpers\DataParser.java,,,,6,2,1,,,,28,4,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.directionhelpers.DataParser.parse",main\java\br\alu\ufc\robertcabral\consultorio\directionhelpers\DataParser.java,,,,7,5,1,,,,32,4,,
+Public Class,"br.alu.ufc.robertcabral.consultorio.directionhelpers.FetchURL",main\java\br\alu\ufc\robertcabral\consultorio\directionhelpers\FetchURL.java,50,15,1,7,2,,0,2,1,51,9,,4
+Public Constructor,"br.alu.ufc.robertcabral.consultorio.directionhelpers.FetchURL.FetchURL",main\java\br\alu\ufc\robertcabral\consultorio\directionhelpers\FetchURL.java,,,,1,0,1,,,,3,0,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.directionhelpers.FetchURL.doInBackground",main\java\br\alu\ufc\robertcabral\consultorio\directionhelpers\FetchURL.java,,,,2,1,1,,,,11,2,,
+Private Method,"br.alu.ufc.robertcabral.consultorio.directionhelpers.FetchURL.downloadUrl",main\java\br\alu\ufc\robertcabral\consultorio\directionhelpers\FetchURL.java,,,,3,2,1,,,,26,3,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.directionhelpers.FetchURL.onPostExecute",main\java\br\alu\ufc\robertcabral\consultorio\directionhelpers\FetchURL.java,,,,1,0,1,,,,5,1,,
+Public Class,"br.alu.ufc.robertcabral.consultorio.directionhelpers.PointsParser",main\java\br\alu\ufc\robertcabral\consultorio\directionhelpers\PointsParser.java,33,16,2,8,2,,0,2,1,57,12,,3
+Public Constructor,"br.alu.ufc.robertcabral.consultorio.directionhelpers.PointsParser.PointsParser",main\java\br\alu\ufc\robertcabral\consultorio\directionhelpers\PointsParser.java,,,,1,0,1,,,,4,0,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.directionhelpers.PointsParser.doInBackground",main\java\br\alu\ufc\robertcabral\consultorio\directionhelpers\PointsParser.java,,,,2,1,1,,,,17,1,,
+Protected Method,"br.alu.ufc.robertcabral.consultorio.directionhelpers.PointsParser.onPostExecute",main\java\br\alu\ufc\robertcabral\consultorio\directionhelpers\PointsParser.java,,,,5,2,1,,,,30,6,,
+Public Interface,"br.alu.ufc.robertcabral.consultorio.directionhelpers.TaskLoadedCallback",main\java\br\alu\ufc\robertcabral\consultorio\directionhelpers\TaskLoadedCallback.java,0,0,0,0,0,,1,0,0,3,0,,1
+Abstract Method,"br.alu.ufc.robertcabral.consultorio.directionhelpers.TaskLoadedCallback.onTaskDone",main\java\br\alu\ufc\robertcabral\consultorio\directionhelpers\TaskLoadedCallback.java,,,,0,0,0,,,,1,0,,
+Package,"br.alu.ufc.robertcabral.consultorio.entity",main\java\br\alu\ufc\robertcabral\consultorio\entity\App.java,,,1,34,3,,,,,140,0,4,22
+Public Class,"br.alu.ufc.robertcabral.consultorio.entity.App",main\java\br\alu\ufc\robertcabral\consultorio\entity\App.java,79,10,3,13,3,,0,2,1,45,0,,1
+Public Static Method,"br.alu.ufc.robertcabral.consultorio.entity.App.haveNetwork",main\java\br\alu\ufc\robertcabral\consultorio\entity\App.java,,,,6,3,1,,,,14,0,,
+Public Static Method,"br.alu.ufc.robertcabral.consultorio.entity.App.isMyServiceRunning",main\java\br\alu\ufc\robertcabral\consultorio\entity\App.java,,,,3,2,3,,,,8,0,,
+Public Static Method,"br.alu.ufc.robertcabral.consultorio.entity.App.isRunning",main\java\br\alu\ufc\robertcabral\consultorio\entity\App.java,,,,3,2,3,,,,9,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.entity.App.onCreate",main\java\br\alu\ufc\robertcabral\consultorio\entity\App.java,,,,1,0,1,,,,5,0,,
+Public Class,"br.alu.ufc.robertcabral.consultorio.entity.Fila",main\java\br\alu\ufc\robertcabral\consultorio\entity\Fila.java,62,1,1,8,0,,0,1,1,29,0,,8
+Public Constructor,"br.alu.ufc.robertcabral.consultorio.entity.Fila.Fila",main\java\br\alu\ufc\robertcabral\consultorio\entity\Fila.java,,,,1,0,1,,,,5,0,,
+Public Constructor,"br.alu.ufc.robertcabral.consultorio.entity.Fila.Fila",main\java\br\alu\ufc\robertcabral\consultorio\entity\Fila.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.entity.Fila.getNome",main\java\br\alu\ufc\robertcabral\consultorio\entity\Fila.java,,,,1,0,1,,,,3,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.entity.Fila.getPosition",main\java\br\alu\ufc\robertcabral\consultorio\entity\Fila.java,,,,1,0,1,,,,3,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.entity.Fila.getUid",main\java\br\alu\ufc\robertcabral\consultorio\entity\Fila.java,,,,1,0,1,,,,3,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.entity.Fila.setNome",main\java\br\alu\ufc\robertcabral\consultorio\entity\Fila.java,,,,1,0,1,,,,3,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.entity.Fila.setPosition",main\java\br\alu\ufc\robertcabral\consultorio\entity\Fila.java,,,,1,0,1,,,,3,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.entity.Fila.setUid",main\java\br\alu\ufc\robertcabral\consultorio\entity\Fila.java,,,,1,0,1,,,,3,0,,
+Public Class,"br.alu.ufc.robertcabral.consultorio.entity.Progress",main\java\br\alu\ufc\robertcabral\consultorio\entity\Progress.java,33,2,1,3,0,,0,2,1,19,0,,3
+Public Constructor,"br.alu.ufc.robertcabral.consultorio.entity.Progress.Progress",main\java\br\alu\ufc\robertcabral\consultorio\entity\Progress.java,,,,1,0,1,,,,4,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.entity.Progress.start",main\java\br\alu\ufc\robertcabral\consultorio\entity\Progress.java,,,,1,0,1,,,,8,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.entity.Progress.stop",main\java\br\alu\ufc\robertcabral\consultorio\entity\Progress.java,,,,1,0,1,,,,3,0,,
+Public Class,"br.alu.ufc.robertcabral.consultorio.entity.User",main\java\br\alu\ufc\robertcabral\consultorio\entity\User.java,70,1,1,10,0,,0,1,1,35,0,,10
+Public Constructor,"br.alu.ufc.robertcabral.consultorio.entity.User.User",main\java\br\alu\ufc\robertcabral\consultorio\entity\User.java,,,,1,0,1,,,,2,0,,
+Public Constructor,"br.alu.ufc.robertcabral.consultorio.entity.User.User",main\java\br\alu\ufc\robertcabral\consultorio\entity\User.java,,,,1,0,1,,,,6,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.entity.User.getDateBirth",main\java\br\alu\ufc\robertcabral\consultorio\entity\User.java,,,,1,0,1,,,,3,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.entity.User.getEmail",main\java\br\alu\ufc\robertcabral\consultorio\entity\User.java,,,,1,0,1,,,,3,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.entity.User.getName",main\java\br\alu\ufc\robertcabral\consultorio\entity\User.java,,,,1,0,1,,,,3,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.entity.User.getUid",main\java\br\alu\ufc\robertcabral\consultorio\entity\User.java,,,,1,0,1,,,,3,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.entity.User.setDateBirth",main\java\br\alu\ufc\robertcabral\consultorio\entity\User.java,,,,1,0,1,,,,3,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.entity.User.setEmail",main\java\br\alu\ufc\robertcabral\consultorio\entity\User.java,,,,1,0,1,,,,3,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.entity.User.setName",main\java\br\alu\ufc\robertcabral\consultorio\entity\User.java,,,,1,0,1,,,,3,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.entity.User.setUid",main\java\br\alu\ufc\robertcabral\consultorio\entity\User.java,,,,1,0,1,,,,3,0,,
+Package,"br.alu.ufc.robertcabral.consultorio.service",main\java\br\alu\ufc\robertcabral\consultorio\service\NotificationService.java,,,1,17,3,,,,,115,1,5,12
+Public Class,"br.alu.ufc.robertcabral.consultorio.service.NotificationService",main\java\br\alu\ufc\robertcabral\consultorio\service\NotificationService.java,0,6,1,4,0,,0,2,1,88,1,,4
+Public Constructor,"br.alu.ufc.robertcabral.consultorio.service.NotificationService.NotificationService",main\java\br\alu\ufc\robertcabral\consultorio\service\NotificationService.java,,,,1,0,1,,,,2,0,,
+Class,"br.alu.ufc.robertcabral.consultorio.service.NotificationService.Worker",main\java\br\alu\ufc\robertcabral\consultorio\service\NotificationService.java,50,6,1,2,0,,0,1,1,70,0,,2
+Constructor,"br.alu.ufc.robertcabral.consultorio.service.NotificationService.Worker.Worker",main\java\br\alu\ufc\robertcabral\consultorio\service\NotificationService.java,,,,1,0,1,,,,27,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.service.NotificationService.Worker.Worker.(Anon_1)",main\java\br\alu\ufc\robertcabral\consultorio\service\NotificationService.java,0,7,2,4,2,,0,2,1,11,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.service.NotificationService.Worker.Worker.(Anon_1).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\service\NotificationService.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.service.NotificationService.Worker.Worker.(Anon_1).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\service\NotificationService.java,,,,3,2,1,,,,6,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.service.NotificationService.Worker.Worker.(Anon_2)",main\java\br\alu\ufc\robertcabral\consultorio\service\NotificationService.java,0,7,1,2,0,,0,2,1,8,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.service.NotificationService.Worker.Worker.(Anon_2).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\service\NotificationService.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.service.NotificationService.Worker.Worker.(Anon_2).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\service\NotificationService.java,,,,1,0,1,,,,3,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.service.NotificationService.Worker.run",main\java\br\alu\ufc\robertcabral\consultorio\service\NotificationService.java,,,,1,0,1,,,,37,0,,
+Anonymous Class,"br.alu.ufc.robertcabral.consultorio.service.NotificationService.Worker.run.(Anon_3)",main\java\br\alu\ufc\robertcabral\consultorio\service\NotificationService.java,0,20,2,5,3,,0,2,1,33,0,,2
+Public Method,"br.alu.ufc.robertcabral.consultorio.service.NotificationService.Worker.run.(Anon_3).onCancelled",main\java\br\alu\ufc\robertcabral\consultorio\service\NotificationService.java,,,,1,0,1,,,,2,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.service.NotificationService.Worker.run.(Anon_3).onDataChange",main\java\br\alu\ufc\robertcabral\consultorio\service\NotificationService.java,,,,4,3,1,,,,27,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.service.NotificationService.onBind",main\java\br\alu\ufc\robertcabral\consultorio\service\NotificationService.java,,,,1,0,1,,,,3,1,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.service.NotificationService.onCreate",main\java\br\alu\ufc\robertcabral\consultorio\service\NotificationService.java,,,,1,0,1,,,,5,0,,
+Public Method,"br.alu.ufc.robertcabral.consultorio.service.NotificationService.onStartCommand",main\java\br\alu\ufc\robertcabral\consultorio\service\NotificationService.java,,,,1,0,1,,,,3,0,,
+File,"main\java\br\alu\ufc\robertcabral\consultorio\activitys\AddAdminActivity.java",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AddAdminActivity.java,,,1,28,2,,,,,184,0,6,14
+File,"main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java",main\java\br\alu\ufc\robertcabral\consultorio\activitys\AdminActivity.java,,,1,35,2,,,,,196,21,7,16
+File,"main\java\br\alu\ufc\robertcabral\consultorio\activitys\DashboardActivity.java",main\java\br\alu\ufc\robertcabral\consultorio\activitys\DashboardActivity.java,,,2,32,3,,,,,188,9,7,16
+File,"main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MainActivity.java,,,2,64,3,,,,,422,2,9,25
+File,"main\java\br\alu\ufc\robertcabral\consultorio\activitys\MapsActivity.java",main\java\br\alu\ufc\robertcabral\consultorio\activitys\MapsActivity.java,,,1,29,3,,,,,218,24,2,15
+File,"main\java\br\alu\ufc\robertcabral\consultorio\activitys\ProfileActivity.java",main\java\br\alu\ufc\robertcabral\consultorio\activitys\ProfileActivity.java,,,1,23,2,,,,,177,0,4,11
+File,"main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java",main\java\br\alu\ufc\robertcabral\consultorio\activitys\QueueActivity.java,,,1,54,2,,,,,265,1,10,25
+File,"main\java\br\alu\ufc\robertcabral\consultorio\activitys\SettingsActivity.java",main\java\br\alu\ufc\robertcabral\consultorio\activitys\SettingsActivity.java,,,1,9,1,,,,,75,2,1,5
+File,"main\java\br\alu\ufc\robertcabral\consultorio\activitys\SignupActivity.java",main\java\br\alu\ufc\robertcabral\consultorio\activitys\SignupActivity.java,,,2,25,3,,,,,199,3,6,10
+File,"main\java\br\alu\ufc\robertcabral\consultorio\directionhelpers\DataParser.java",main\java\br\alu\ufc\robertcabral\consultorio\directionhelpers\DataParser.java,,,6,13,5,,,,,70,11,1,2
+File,"main\java\br\alu\ufc\robertcabral\consultorio\directionhelpers\FetchURL.java",main\java\br\alu\ufc\robertcabral\consultorio\directionhelpers\FetchURL.java,,,1,7,2,,,,,61,9,1,4
+File,"main\java\br\alu\ufc\robertcabral\consultorio\directionhelpers\PointsParser.java",main\java\br\alu\ufc\robertcabral\consultorio\directionhelpers\PointsParser.java,,,2,8,2,,,,,68,12,1,3
+File,"main\java\br\alu\ufc\robertcabral\consultorio\directionhelpers\TaskLoadedCallback.java",main\java\br\alu\ufc\robertcabral\consultorio\directionhelpers\TaskLoadedCallback.java,,,0,0,0,,,,,4,3,1,1
+File,"main\java\br\alu\ufc\robertcabral\consultorio\entity\App.java",main\java\br\alu\ufc\robertcabral\consultorio\entity\App.java,,,3,13,3,,,,,52,0,1,1
+File,"main\java\br\alu\ufc\robertcabral\consultorio\entity\Fila.java",main\java\br\alu\ufc\robertcabral\consultorio\entity\Fila.java,,,1,8,0,,,,,30,0,1,8
+File,"main\java\br\alu\ufc\robertcabral\consultorio\entity\Progress.java",main\java\br\alu\ufc\robertcabral\consultorio\entity\Progress.java,,,1,3,0,,,,,22,0,1,3
+File,"main\java\br\alu\ufc\robertcabral\consultorio\entity\User.java",main\java\br\alu\ufc\robertcabral\consultorio\entity\User.java,,,1,10,0,,,,,36,0,1,10
+File,"main\java\br\alu\ufc\robertcabral\consultorio\service\NotificationService.java",main\java\br\alu\ufc\robertcabral\consultorio\service\NotificationService.java,,,1,17,3,,,,,115,1,5,12
+File,"test\java\br\alu\ufc\robertcabral\consultorio\ExampleUnitTest.java",test\java\br\alu\ufc\robertcabral\consultorio\ExampleUnitTest.java,,,1,1,0,,,,,9,5,1,1

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.DashboardActivity">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/linearLayoutDashboard"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/circle"
+                    android:src="@drawable/logo_clinica"
+                    android:padding="10dp"
+                    android:layout_marginTop="20dp"
+                    android:tint="@color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clinica Odontologica"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="sans-serif-black"/>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/trianguloLoginDashboard"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/square"
+                android:layout_marginTop="-10dp"
+                android:rotation="45"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/linearLayoutDashboard"
+                />
+
+           <ScrollView
+               android:layout_marginTop="15dp"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_below="@id/trianguloLoginDashboard">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+               <LinearLayout
+                   android:clipToPadding="false"
+                   android:gravity="center"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <android.support.v7.widget.CardView
+                       android:foreground="?android:attr/selectableItemBackground"
+                       android:id="@+id/btViewQueue"
+                       android:clickable="true"
+                       android:layout_width="140dp"
+                       android:layout_height="180dp"
+                       android:layout_margin="10dp">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:orientation="vertical"
+                           android:gravity="center">
+
+                           <ImageView
+                               android:layout_width="64dp"
+                               android:layout_height="64dp"
+                               android:background="@drawable/circle_blue"
+                               android:src="@drawable/img_list"
+                               android:tint="@color/white"
+                               android:padding="10dp"/>
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textStyle="bold"
+                               android:layout_marginTop="10dp"
+                               android:text="Ver fila"/>
+                           
+                           <View
+                               android:layout_width="match_parent"
+                               android:layout_height="1dp"
+                               android:background="@color/lightgray"
+                               android:layout_margin="10dp" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:gravity="center"
+                               android:text="Vizualizar fila de espera"
+                               android:padding="5dp"
+                               android:textColor="@android:color/darker_gray"/>
+
+                       </LinearLayout>
+
+                   </android.support.v7.widget.CardView>
+
+                   <android.support.v7.widget.CardView
+                       android:id="@+id/btSchedule"
+                       android:foreground="?android:attr/selectableItemBackground"
+                       android:clickable="true"
+                       android:layout_width="140dp"
+                       android:layout_height="180dp"
+                       android:layout_margin="10dp">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:orientation="vertical"
+                           android:gravity="center">
+
+                           <ImageView
+                               android:layout_width="64dp"
+                               android:layout_height="64dp"
+                               android:background="@drawable/circle_green"
+                               android:src="@drawable/img_event_add"
+                               android:tint="@color/white"
+                               android:padding="10dp"/>
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textStyle="bold"
+                               android:layout_marginTop="10dp"
+                               android:text="Agendar consulta"/>
+
+                           <View
+                               android:layout_width="match_parent"
+                               android:layout_height="1dp"
+                               android:background="@color/lightgray"
+                               android:layout_margin="10dp" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:gravity="center"
+                               android:text="Agendar nova consulta"
+                               android:padding="5dp"
+                               android:textColor="@android:color/darker_gray"/>
+
+                       </LinearLayout>
+
+                   </android.support.v7.widget.CardView>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:clipToPadding="false"
+                   android:gravity="center"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <android.support.v7.widget.CardView
+                       android:id="@+id/btChegueAteNos"
+                       android:foreground="?android:attr/selectableItemBackground"
+                       android:clickable="true"
+                       android:layout_width="140dp"
+                       android:layout_height="180dp"
+                       android:layout_margin="10dp">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:orientation="vertical"
+                           android:gravity="center">
+
+                           <ImageView
+                               android:layout_width="64dp"
+                               android:layout_height="64dp"
+                               android:background="@drawable/circle_yellow"
+                               android:src="@drawable/img_locale"
+                               android:tint="@color/white"
+                               android:padding="10dp"/>
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textStyle="bold"
+                               android:layout_marginTop="10dp"
+                               android:text="Chegue até nos"/>
+
+                           <View
+                               android:layout_width="match_parent"
+                               android:layout_height="1dp"
+                               android:background="@color/lightgray"
+                               android:layout_margin="10dp" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:gravity="center"
+                               android:text="Vizualizar rotas disponiveis"
+                               android:padding="5dp"
+                               android:textColor="@android:color/darker_gray"/>
+
+                       </LinearLayout>
+
+                   </android.support.v7.widget.CardView>
+
+                   <android.support.v7.widget.CardView
+                       android:id="@+id/btSettings"
+                       android:foreground="?android:attr/selectableItemBackground"
+                       android:clickable="true"
+                       android:layout_width="140dp"
+                       android:layout_height="180dp"
+                       android:layout_margin="10dp">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:orientation="vertical"
+                           android:gravity="center">
+
+                           <ImageView
+                               android:layout_width="64dp"
+                               android:layout_height="64dp"
+                               android:background="@drawable/circle_red"
+                               android:src="@drawable/img_settings"
+                               android:tint="@color/white"
+                               android:padding="10dp"/>
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textStyle="bold"
+                               android:layout_marginTop="10dp"
+                               android:text="Configurações"/>
+
+                           <View
+                               android:layout_width="match_parent"
+                               android:layout_height="1dp"
+                               android:background="@color/lightgray"
+                               android:layout_margin="10dp" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:gravity="center"
+                               android:text="Configure o aplicativo"
+                               android:padding="5dp"
+                               android:textColor="@android:color/darker_gray"/>
+
+                       </LinearLayout>
+
+                   </android.support.v7.widget.CardView>
+
+               </LinearLayout>
+
+               </LinearLayout>
+
+           </ScrollView>
+
+        </RelativeLayout>
+
+
+
+</RelativeLayout>

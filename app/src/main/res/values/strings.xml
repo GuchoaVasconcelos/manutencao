@@ -1,0 +1,5 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Consultorio</string>
+    <string name="com.twitter.sdk.android.CONSUMER_KEY" tools:ignore="ExtraTranslation">deZ4gLmZMhSixXOjArseoCGJ5</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET" tools:ignore="ExtraTranslation">5Uj9L5pAS6QIu3ZBh74Nfn7FIXJo2rwMnsuLGO7q4MhwkLRgAR</string>
+</resources>

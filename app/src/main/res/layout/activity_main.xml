@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.MainActivity">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/linearLayout1"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/circle"
+                    android:src="@drawable/logo_clinica"
+                    android:padding="10dp"
+                    android:layout_marginTop="20dp"
+                    android:tint="@color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clinica Odontologica"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="sans-serif-black"/>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/trianguloLogin"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/square"
+                android:layout_marginTop="-10dp"
+                android:rotation="45"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/linearLayout1"
+                />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutLogin1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/trianguloLogin">
+
+                <ImageView
+                    android:id="@+id/imgUserLogin"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:src="@drawable/img_email"
+                    android:padding="8dp"
+                    android:tint="@color/white"/>
+
+                <EditText
+                    android:id="@+id/etEmailLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editTextBG"
+                    android:layout_toRightOf="@+id/imgUserLogin"
+                    android:inputType="textEmailAddress"
+                    android:layout_alignParentTop="true"
+                    android:hint="Email"
+                    android:paddingLeft="20dp"
+                    android:layout_alignBottom="@id/imgUserLogin"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutLogin2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/relativeLayoutLogin1">
+
+                <ImageView
+                    android:id="@+id/imgPassLogin"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:src="@drawable/img_authentication"
+                    android:padding="8dp"
+                    android:tint="@color/white"/>
+
+                <EditText
+                    android:id="@+id/etPasswordLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editTextBG"
+                    android:layout_toRightOf="@+id/imgPassLogin"
+                    android:layout_alignParentTop="true"
+                    android:hint="Senha"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp"
+                    android:layout_alignBottom="@id/imgPassLogin"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutLogin3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativeLayoutLogin2"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp">
+
+                <CheckBox
+                    android:id="@+id/rememberLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lembrar"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/textColor"/>
+
+                <Button
+                    android:id="@+id/btForgotPasswordLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:text="Esqueceu a senha?"
+                    android:layout_alignParentRight="true"
+                    android:textAllCaps="false"
+                    android:textSize="13dp"
+                    android:textColor="@color/textColor"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/buttonLogin"
+                android:layout_below="@id/relativeLayoutLogin3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:text="Login"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/white"
+                />
+
+            <ImageView
+                android:id="@+id/linhaLogin"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/buttonLogin"
+                android:layerType="software"
+                android:src="@drawable/dash"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/conecteLogin"
+                android:layout_below="@id/linhaLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Ou conecte-se com:"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"/>
+
+            <LinearLayout
+                android:id="@+id/linearlayoutRedesSociaisLogin"
+                android:layout_below="@id/conecteLogin"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.facebook.login.widget.LoginButton
+                            android:id="@+id/btFacebookLogin"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent" />
+
+                        <ImageView
+                            android:background="@color/facebookBlue"
+                            android:src="@drawable/img_facebook"
+                            android:padding="10dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/btGoogleLogin"
+                    android:background="@color/googleRed"
+                    android:src="@drawable/img_googleplus"
+                    android:padding="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+
+                <com.twitter.sdk.android.core.identity.TwitterLoginButton
+                    android:id="@+id/btTwitterLogin"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvCadastreLogin"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_below="@+id/linearlayoutRedesSociaisLogin"
+                android:text="Não é cadastrado? Cadastre-se"/>
+
+        </RelativeLayout>
+
+
+
+
+</RelativeLayout>
