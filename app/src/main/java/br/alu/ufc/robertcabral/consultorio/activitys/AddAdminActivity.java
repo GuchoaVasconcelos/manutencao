@@ -106,6 +106,7 @@ public class AddAdminActivity extends AppCompatActivity implements View.OnClickL
 
                     @Override
                     public void onCancelled(@NonNull DatabaseError databaseError) {
+                        throw new UnsupportedOperationException();
 
                     }
                 });
@@ -114,6 +115,7 @@ public class AddAdminActivity extends AppCompatActivity implements View.OnClickL
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
+                throw new UnsupportedOperationException();
 
             }
         });
@@ -135,6 +137,7 @@ public class AddAdminActivity extends AppCompatActivity implements View.OnClickL
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
+                throw new UnsupportedOperationException();
 
             }
         });
@@ -161,6 +164,7 @@ public class AddAdminActivity extends AppCompatActivity implements View.OnClickL
 
         @Override
         public void onCancelled(@NonNull DatabaseError databaseError) {
+            throw new UnsupportedOperationException();
 
         }
     };
@@ -194,6 +198,7 @@ public class AddAdminActivity extends AppCompatActivity implements View.OnClickL
 
                         @Override
                         public void onCancelled(DatabaseError databaseError) {
+                            throw new UnsupportedOperationException();
 
                         }
                     });
@@ -238,6 +243,7 @@ public class AddAdminActivity extends AppCompatActivity implements View.OnClickL
 
     @Override
     public void onClick(View v) {
+        throw new UnsupportedOperationException();
 
     }
 }

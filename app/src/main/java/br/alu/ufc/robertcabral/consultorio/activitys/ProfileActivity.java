@@ -85,6 +85,7 @@ public class ProfileActivity extends AppCompatActivity implements DatePickerDial
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
+                throw new UnsupportedOperationException();
 
             }
         };
@@ -120,7 +121,6 @@ public class ProfileActivity extends AppCompatActivity implements DatePickerDial
         switch (v.getId()){
             case R.id.btUpdateProfile:
 
-                final SimpleDateFormat dt = new SimpleDateFormat("dd/MM/yyyy");
 
                 User userUpdated = new User();
 
@@ -176,6 +176,7 @@ public class ProfileActivity extends AppCompatActivity implements DatePickerDial
 
                         @Override
                         public void onCancelled(DatabaseError databaseError) {
+                            throw new UnsupportedOperationException();
 
                         }
                     });

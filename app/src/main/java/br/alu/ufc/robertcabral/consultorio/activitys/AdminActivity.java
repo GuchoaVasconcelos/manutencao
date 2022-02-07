@@ -43,15 +43,10 @@ public class AdminActivity extends AppCompatActivity implements View.OnClickList
     DatabaseReference databaseRef;
     FirebaseAuth auth;
     Fila fila;
-    //Progress progress;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin);
-
-        //progress = new Progress(AdminActivity.this);
-
-        //progress.start("Aguarde", "Atualizando");
 
         selected = -1;
 
@@ -72,22 +67,6 @@ public class AdminActivity extends AppCompatActivity implements View.OnClickList
 
         query.addValueEventListener(listener);
 
-//        mDatabase.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-//                values.clear();
-//                for (DataSnapshot data : dataSnapshot.getChildren()){
-//                    values.add(data.getValue(Fila.class));
-//                }
-//
-//                Collections.sort(values, (o1, o2) -> Integer.compare(o1.getPosition(), o2.getPosition()));
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError databaseError) {
-//
-//            }
-//        });
 
         listAdmin.setOnItemClickListener((parent, view, position, id) -> {
             selected = position;
@@ -107,6 +86,7 @@ public class AdminActivity extends AppCompatActivity implements View.OnClickList
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
+                throw new UnsupportedOperationException();
 
             }
         });
@@ -116,7 +96,6 @@ public class AdminActivity extends AppCompatActivity implements View.OnClickList
     ValueEventListener listener = new ValueEventListener() {
         @Override
         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-            //ArrayList<Fila> values = new ArrayList<>();
             values.clear();
             for (DataSnapshot data : dataSnapshot.getChildren()){
                 values.add(data.getValue(Fila.class));
@@ -142,6 +121,7 @@ public class AdminActivity extends AppCompatActivity implements View.OnClickList
 
         @Override
         public void onCancelled(@NonNull DatabaseError databaseError) {
+            throw new UnsupportedOperationException();
 
         }
     };
@@ -168,7 +148,6 @@ public class AdminActivity extends AppCompatActivity implements View.OnClickList
                 if( values.size() > 0 && selected != -1 ){
 
                     Fila filaSelected = values.get( selected );
-                    //mDatabase.child(fila1.getUid()).removeValue();
 
                     databaseRef = mDatabase.child(QUEUE);
 
@@ -226,6 +205,7 @@ public class AdminActivity extends AppCompatActivity implements View.OnClickList
 
                                                     @Override
                                                     public void onCancelled(@NonNull DatabaseError databaseError) {
+                                                        throw new UnsupportedOperationException();
 
                                                     }
                                                 });
@@ -247,6 +227,7 @@ public class AdminActivity extends AppCompatActivity implements View.OnClickList
 
                                                     @Override
                                                     public void onCancelled(@NonNull DatabaseError databaseError) {
+                                                        throw new UnsupportedOperationException();
 
                                                     }
                                                 });
@@ -256,6 +237,7 @@ public class AdminActivity extends AppCompatActivity implements View.OnClickList
 
                                         @Override
                                         public void onCancelled(@NonNull DatabaseError databaseError) {
+                                            throw new UnsupportedOperationException();
 
                                         }
                                     });
@@ -265,6 +247,7 @@ public class AdminActivity extends AppCompatActivity implements View.OnClickList
 
                         @Override
                         public void onCancelled(@NonNull DatabaseError databaseError) {
+                            throw new UnsupportedOperationException();
 
                         }
                     });

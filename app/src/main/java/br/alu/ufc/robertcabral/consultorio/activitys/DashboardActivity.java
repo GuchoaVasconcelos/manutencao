@@ -31,6 +31,7 @@ import static br.alu.ufc.robertcabral.consultorio.entity.App.isSchedule;
 
 public class DashboardActivity extends AppCompatActivity implements View.OnClickListener{
 
+    public static final String LAST_POSITION = "lastPosition";
     FirebaseUser user;
     CardView btViewQueue, btSettings, btSchedule, btChegueAteNos;
     App app;
@@ -57,7 +58,7 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
-        databaseRef = mDatabase.child("lastPosition");
+        databaseRef = mDatabase.child(LAST_POSITION);
 
         databaseRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -67,18 +68,16 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
+                throw new UnsupportedOperationException();
 
             }
         });
 
         databaseRef = mDatabase.child("Queue");
-
-        //Query query = databaseRef;
-        //query.addListenerForSingleValueEvent(listener);
         databaseRef.addValueEventListener(listener);
         databaseRef.removeEventListener(listener2);
 
-        Query queryLast = mDatabase.child("lastPosition");
+        Query queryLast = mDatabase.child(LAST_POSITION);
 
         queryLast.addValueEventListener(new ValueEventListener() {
             @Override
@@ -88,6 +87,7 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
+                throw new UnsupportedOperationException();
 
             }
         });
@@ -135,6 +135,7 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
 
         @Override
         public void onCancelled(DatabaseError databaseError) {
+            throw new UnsupportedOperationException();
 
         }
     };
@@ -167,6 +168,7 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
 
         @Override
         public void onCancelled(DatabaseError databaseError) {
+            throw new UnsupportedOperationException();
 
         }
     };
@@ -197,20 +199,13 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
             case R.id.btSchedule:
 
                 pos = 0;
-
-//                int tes = 1;
-//
-//                FirebaseDatabase.getInstance().getReference("lastPosition")
-//                        .setValue(tes);
-
                 if(!isSchedule) {
 
-                    databaseRef = mDatabase.child("lastPosition");
+                    databaseRef = mDatabase.child(LAST_POSITION);
 
                     databaseRef.addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(DataSnapshot dataSnapshot) {
-                            //Toast.makeText(getApplicationContext(), "Position: " + dataSnapshot.getValue(Integer.class), Toast.LENGTH_SHORT).show();
 
                             Fila fila = new Fila(user.getUid(), user.getDisplayName() ,dataSnapshot.getValue(Integer.class) + 1);
 
@@ -222,7 +217,7 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
                                     if(task.isSuccessful())
                                         isSchedule = true;
 
-                                    FirebaseDatabase.getInstance().getReference("lastPosition")
+                                    FirebaseDatabase.getInstance().getReference(LAST_POSITION)
                                             .setValue(fila.getPosition());
                                 }
 
@@ -231,6 +226,7 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
 
                         @Override
                         public void onCancelled(DatabaseError databaseError) {
+                            throw new UnsupportedOperationException();
 
                         }
                     });

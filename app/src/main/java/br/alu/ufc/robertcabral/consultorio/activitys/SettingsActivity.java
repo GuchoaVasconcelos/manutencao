@@ -79,13 +79,11 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
                 break;
             case 2:
                 Progress progress = new Progress(SettingsActivity.this);
-                //progress.start();
                 FirebaseAuth.getInstance().signOut();
                 stopService(new Intent(SettingsActivity.this, NotificationService.class));
                 Intent i = new Intent(SettingsActivity.this, MainActivity.class);
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(i);
-                //progress.stop();
                 finishAffinity();
                 break;
         }

@@ -154,7 +154,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private final LocationListener mLocationListener = new LocationListener() {
         @Override
         public void onLocationChanged(final Location location) {
-            //Toast.makeText(getApplicationContext(), "Lat: " + latittude + "\nLong: " + longitude, Toast.LENGTH_LONG).show();
             if(mMap != null) {
                 mMap.clear();
 
@@ -166,31 +165,24 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
                 mMap.addMarker(place1);
                 mMap.addMarker(place2);
-//
-//                LatLngBounds.Builder builder = new LatLngBounds.Builder();
-//                builder.include(place1.getPosition());
-//                builder.include(place2.getPosition());
-//                LatLngBounds bounds = builder.build();
-//
-//                int padding = 200;
-//                CameraUpdate cu = CameraUpdateFactory.newLatLngBounds(bounds, padding);
-//
-//                mMap.animateCamera(cu);
             }
         }
 
         @Override
         public void onStatusChanged(String provider, int status, Bundle extras) {
+            throw new UnsupportedOperationException();
 
         }
 
         @Override
         public void onProviderEnabled(String provider) {
+            throw new UnsupportedOperationException();
 
         }
 
         @Override
         public void onProviderDisabled(String provider) {
+            throw new UnsupportedOperationException();
 
         }
     };
@@ -229,9 +221,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         CameraUpdate cu = CameraUpdateFactory.newLatLngBounds(bounds, padding);
 
         mMap.moveCamera(cu);
-
-        //LatLng hcmus = new LatLng((place1.getPosition().latitude + place2.getPosition().latitude) / 2,(place1.getPosition().longitude + place2.getPosition().longitude) / 2);
-        //mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(hcmus, 14));
     }
 
     private String getUrl(LatLng origin, LatLng dest, String directionMode) {

@@ -129,6 +129,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                     @Override
                     public void failure(TwitterException exception) {
+                        throw new UnsupportedOperationException();
 
                     }
                 });
@@ -167,6 +168,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                                     @Override
                                     public void onCancelled(@NonNull DatabaseError databaseError) {
+                                        throw new UnsupportedOperationException();
 
                                     }
                                 };
@@ -200,7 +202,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Log.e("Erro Twitter Login: ", exception.getMessage());
             }
         });
-        //progressDialog.dismiss();
 
         GoogleSignInOptions googleSignInOptions = new GoogleSignInOptions
                 .Builder()
@@ -258,7 +259,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onCancel() {
                 if (progress.progressDialog != null && progress.progressDialog.isShowing())
                     progress.stop();
-                //Snackbar.make(getWindow().getCurrentFocus(), "Usuário cancelou", Snackbar.LENGTH_LONG).show();
             }
 
             @Override
@@ -305,6 +305,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                             @Override
                             public void onCancelled(@NonNull DatabaseError databaseError) {
+                                throw new UnsupportedOperationException();
 
                             }
                         };
@@ -382,6 +383,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                                 @Override
                                 public void onCancelled(@NonNull DatabaseError databaseError) {
+                                    throw new UnsupportedOperationException();
 
                                 }
                             };

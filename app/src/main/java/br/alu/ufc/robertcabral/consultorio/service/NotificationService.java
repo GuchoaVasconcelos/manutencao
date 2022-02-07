@@ -32,6 +32,7 @@ import static br.alu.ufc.robertcabral.consultorio.entity.App.lastPosition;
 
 public class NotificationService extends Service {
     public NotificationService() {
+        throw new UnsupportedOperationException();
     }
 
     @Override
@@ -75,6 +76,7 @@ public class NotificationService extends Service {
 
                 @Override
                 public void onCancelled(@NonNull DatabaseError databaseError) {
+                    throw new UnsupportedOperationException();
 
                 }
             });
@@ -89,6 +91,7 @@ public class NotificationService extends Service {
 
                 @Override
                 public void onCancelled(@NonNull DatabaseError databaseError) {
+                    throw new UnsupportedOperationException();
 
                 }
             });
@@ -137,6 +140,7 @@ public class NotificationService extends Service {
 
                 @Override
                 public void onCancelled(@NonNull DatabaseError databaseError) {
+                    throw new UnsupportedOperationException();
 
                 }
             });

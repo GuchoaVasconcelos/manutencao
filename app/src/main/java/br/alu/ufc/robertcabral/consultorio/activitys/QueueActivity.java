@@ -72,6 +72,7 @@ public class QueueActivity extends AppCompatActivity implements View.OnClickList
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
+                throw new UnsupportedOperationException();
 
             }
         });
@@ -125,6 +126,7 @@ public class QueueActivity extends AppCompatActivity implements View.OnClickList
 
         @Override
         public void onCancelled(@NonNull DatabaseError databaseError) {
+            throw new UnsupportedOperationException();
 
         }
     };
@@ -200,6 +202,7 @@ public class QueueActivity extends AppCompatActivity implements View.OnClickList
 
                                                     @Override
                                                     public void onCancelled(@NonNull DatabaseError databaseError) {
+                                                        throw new UnsupportedOperationException();
 
                                                     }
                                                 });
@@ -211,6 +214,7 @@ public class QueueActivity extends AppCompatActivity implements View.OnClickList
 
                                         @Override
                                         public void onCancelled(@NonNull DatabaseError databaseError) {
+                                            throw new UnsupportedOperationException();
 
                                         }
                                     });
@@ -221,6 +225,7 @@ public class QueueActivity extends AppCompatActivity implements View.OnClickList
 
                         @Override
                         public void onCancelled(@NonNull DatabaseError databaseError) {
+                            throw new UnsupportedOperationException();
 
                         }
                     });
@@ -286,6 +291,7 @@ public class QueueActivity extends AppCompatActivity implements View.OnClickList
 
                                                     @Override
                                                     public void onCancelled(@NonNull DatabaseError databaseError) {
+                                                        throw new UnsupportedOperationException();
 
                                                     }
                                                 });
@@ -307,6 +313,7 @@ public class QueueActivity extends AppCompatActivity implements View.OnClickList
 
                                                     @Override
                                                     public void onCancelled(@NonNull DatabaseError databaseError) {
+                                                        throw new UnsupportedOperationException();
 
                                                     }
                                                 });
@@ -317,6 +324,7 @@ public class QueueActivity extends AppCompatActivity implements View.OnClickList
 
                                         @Override
                                         public void onCancelled(@NonNull DatabaseError databaseError) {
+                                            throw new UnsupportedOperationException();
 
                                         }
                                     });
@@ -326,6 +334,7 @@ public class QueueActivity extends AppCompatActivity implements View.OnClickList
 
                         @Override
                         public void onCancelled(@NonNull DatabaseError databaseError) {
+                            throw new UnsupportedOperationException();
 
                         }
                     });
